@@ -4,73 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration - MecaLink</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 
-    <header>
+```
+<header class="site-header">
+
+    <div class="brand">
         <h1>MecaLink</h1>
         <p>Connect. Repair. Drive.</p>
+    </div>
 
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="registration.html">Register</a>
-            <a href="mechanics.html">Find a Mechanic</a>
-            <a href="help.html">Get Help</a>
-            <a href="community.html">Community</a>
-            <a href="marketplace.html">Marketplace</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="registration.html">Register</a>
+        <a href="mechanics.html">Find a Mechanic</a>
+        <a href="help.html">Get Help</a>
+        <a href="community.html">Community</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="ratings.html">Reviews</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Get in Touch</a>
+    </nav>
 
-    <main>
+</header>
 
-        <h2>Create Your MecaLink Account</h2>
 
-        <p>
-            Register to connect with mechanics, vehicle owners and sellers.
-        </p>
+<main>
 
-        <form>
+    <section class="registration-hero">
 
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name">
+        <div class="registration-intro">
 
-            <br><br>
+            <p class="section-label">JOIN MECALINK</p>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <h2>Create Your <span>MecaLink Account</span></h2>
 
-            <br><br>
+            <p>
+                Register to connect with mechanics, vehicle owners
+                and sellers in the MecaLink community.
+            </p>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
 
-            <br><br>
+    </section>
 
-            <label for="role">I am a:</label>
-            <select id="role" name="role">
-                <option value="">Select your role</option>
-                <option value="vehicle-owner">Vehicle Owner</option>
-                <option value="mechanic">Mechanic</option>
-                <option value="seller">Seller / Business</option>
-            </select>
 
-            <br><br>
+    <section class="registration-section">
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Create a password">
+        <div class="registration-container">
 
-            <br><br>
+            <div class="registration-form-card">
 
-            <button type="submit">Create Account</button>
+                <div class="registration-icon">👤</div>
 
-        </form>
+                <h2>Create Your Account</h2>
 
-    </main>
+                <p class="registration-description">
+                    Enter your details below to get started.
+                </p>
 
-    <footer>
-        <p>&copy; 2026 MecaLink. All rights reserved.</p>
-    </footer>
+
+                <form>
+
+                    <div class="registration-form-group">
+
+                        <label for="name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                        >
+
+                    </div>
+
+
+                    <div class="registration-form-group">
+
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                        >
+
+                    </div>
+
+
+                    <div class="registration-form-group">
+
+                        <label for="phone">Phone Number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="registration-form-group">
+
+                        <label for="role">I am a</label>
+
+                        <select id="role" name="role">
+
+                            <option value="">
+                                Select your role
+                            </option>
+
+                            <option value="vehicle-owner">
+                                Vehicle Owner
+                            </option>
+
+                            <option value="mechanic">
+                                Mechanic
+                            </option>
+
+                            <option value="seller">
+                                Seller / Business
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="registration-form-group">
+
+                        <label for="password">Password</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="registration-button"
+                    >
+                        Create Account
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <div class="registration-info-card">
+
+                <div class="registration-info-icon">🚗</div>
+
+                <h3>Welcome to MecaLink</h3>
+
+                <p>
+                    Create an account to access MecaLink's
+                    automotive community and services.
+                </p>
+
+                <div class="registration-feature">
+                    <span>✓</span>
+                    Connect with mechanics
+                </div>
+
+                <div class="registration-feature">
+                    <span>✓</span>
+                    Get vehicle assistance
+                </div>
+
+                <div class="registration-feature">
+                    <span>✓</span>
+                    Explore the marketplace
+                </div>
+
+                <div class="registration-feature">
+                    <span>✓</span>
+                    Join the automotive community
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-brand">
+        <h2>MecaLink</h2>
+        <p>Connect. Repair. Drive.</p>
+    </div>
+
+    <p>&copy; 2026 MecaLink. All rights reserved.</p>
+
+</footer>
+```
 
 </body>
+
 </html>

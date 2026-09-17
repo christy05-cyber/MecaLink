@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Help - MecaLink</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>MecaLink</h1>
-        <p>Connect. Repair. Drive.</p>
+    <header class="site-header">
+
+        <div class="brand">
+            <h1>MecaLink</h1>
+            <p>Connect. Repair. Drive.</p>
+        </div>
 
         <nav>
             <a href="../index.html">Home</a>
@@ -19,29 +23,125 @@
             <a href="community.html">Community</a>
             <a href="marketplace.html">Marketplace</a>
         </nav>
+
     </header>
+
 
     <main>
 
-        <h2>Get Help</h2>
+        <section class="help-hero">
 
-        <p>
-            Need urgent help with your vehicle?
-            Tell us what happened and share your location.
-        </p>
+            <div class="help-intro">
+                <p class="section-label">VEHICLE ASSISTANCE</p>
 
-        <label for="problem">What is the problem?</label>
-        <input type="text" id="problem" placeholder="Describe your vehicle problem">
+                <h2>Need Help With Your <span>Vehicle?</span></h2>
 
-        <label for="location">Your Location:</label>
-        <input type="text" id="location" placeholder="Enter your location">
+                <p>
+                    Tell us what happened and share your location.
+                    MecaLink helps connect you with the right
+                    automotive assistance.
+                </p>
+            </div>
 
-        <button>Request Help</button>
+        </section>
+
+
+        <section class="help-section">
+
+            <div class="help-container">
+
+                <div class="help-form">
+
+                    <h2>Request Assistance</h2>
+
+                    <p class="form-description">
+                        Please provide a few details so we can
+                        understand how to assist you.
+                    </p>
+
+
+                    <div class="form-group">
+
+                        <label for="problem">
+                            What is the problem?
+                        </label>
+
+                        <input
+                            type="text"
+                            id="problem"
+                            placeholder="Describe your vehicle problem"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Your Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Enter your location"
+                        >
+
+                    </div>
+
+
+                    <button class="help-button">
+                        Request Help
+                    </button>
+
+                </div>
+
+
+                <div class="help-info">
+
+                    <div class="info-icon">🆘</div>
+
+                    <h3>Need urgent assistance?</h3>
+
+                    <p>
+                        Provide accurate information about your
+                        vehicle problem and location to help
+                        connect you with appropriate assistance.
+                    </p>
+
+                    <div class="info-item">
+                        <span>✓</span>
+                        Describe the problem clearly
+                    </div>
+
+                    <div class="info-item">
+                        <span>✓</span>
+                        Provide your current location
+                    </div>
+
+                    <div class="info-item">
+                        <span>✓</span>
+                        Submit your request
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
+
     <footer>
+
+        <div class="footer-brand">
+            <h2>MecaLink</h2>
+            <p>Connect. Repair. Drive.</p>
+        </div>
+
         <p>&copy; 2026 MecaLink. All rights reserved.</p>
+
     </footer>
 
 </body>

@@ -4,69 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ratings & Reviews - MecaLink</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-    <header>
+```
+<header class="site-header">
+
+    <div class="brand">
         <h1>MecaLink</h1>
         <p>Connect. Repair. Drive.</p>
+    </div>
 
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="registration.html">Register</a>
-            <a href="help.html">Get Help</a>
-            <a href="mechanics.html">Find a Mechanic</a>
-            <a href="location.html">Location</a>
-            <a href="community.html">Community</a>
-            <a href="marketplace.html">Marketplace</a>
-            <a href="ratings.html">Reviews</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Get in Touch</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="registration.html">Register</a>
+        <a href="help.html">Get Help</a>
+        <a href="mechanics.html">Find a Mechanic</a>
+        <a href="location.html">Location</a>
+        <a href="community.html">Community</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="ratings.html">Reviews</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Get in Touch</a>
+    </nav>
 
-    <main>
+</header>
 
-        <h2>Ratings & Reviews</h2>
 
-        <p>
-            Share your experience and help other users
-            find reliable mechanics and services.
-        </p>
+<main>
 
-        <section>
+    <section class="reviews-hero">
 
-            <h3>Rate Your Experience</h3>
+        <div class="reviews-intro">
 
-            <label for="rating">Rating:</label>
-            <select id="rating">
-                <option value="">Select a rating</option>
-                <option value="5">★★★★★ - Excellent</option>
-                <option value="4">★★★★ - Very Good</option>
-                <option value="3">★★★ - Good</option>
-                <option value="2">★★ - Fair</option>
-                <option value="1">★ - Poor</option>
-            </select>
+            <p class="section-label">TRUST & EXPERIENCE</p>
 
-            <br><br>
+            <h2>Ratings & <span>Reviews</span></h2>
 
-            <label for="review">Your Review:</label>
-            <br>
-            <textarea id="review" rows="5" cols="40"
-                placeholder="Write your review here"></textarea>
+            <p>
+                Share your experience and help other users
+                find reliable mechanics and automotive services.
+            </p>
 
-            <br><br>
+        </div>
 
-            <button type="submit">Submit Review</button>
+    </section>
 
-        </section>
 
-    </main>
+    <section class="reviews-section">
 
-    <footer>
-        <p>&copy; 2026 MecaLink. All rights reserved.</p>
-    </footer>
+        <div class="review-container">
+
+            <div class="review-form-card">
+
+                <div class="review-icon">⭐</div>
+
+                <h2>Rate Your Experience</h2>
+
+                <p class="review-description">
+                    Your feedback helps the MecaLink community
+                    make informed decisions.
+                </p>
+
+
+                <div class="review-form-group">
+
+                    <label for="rating">
+                        Rating
+                    </label>
+
+                    <select id="rating">
+
+                        <option value="">
+                            Select a rating
+                        </option>
+
+                        <option value="5">
+                            ★★★★★ - Excellent
+                        </option>
+
+                        <option value="4">
+                            ★★★★ - Very Good
+                        </option>
+
+                        <option value="3">
+                            ★★★ - Good
+                        </option>
+
+                        <option value="2">
+                            ★★ - Fair
+                        </option>
+
+                        <option value="1">
+                            ★ - Poor
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="review-form-group">
+
+                    <label for="review">
+                        Your Review
+                    </label>
+
+                    <textarea
+                        id="review"
+                        rows="6"
+                        placeholder="Write your review here..."
+                    ></textarea>
+
+                </div>
+
+
+                <button class="review-button" type="submit">
+                    Submit Review
+                </button>
+
+            </div>
+
+
+            <div class="review-info-card">
+
+                <div class="review-info-icon">💬</div>
+
+                <h3>Your Feedback Matters</h3>
+
+                <p>
+                    Reviews allow MecaLink users to share their
+                    experiences and help others discover
+                    reliable automotive services.
+                </p>
+
+
+                <div class="review-feature">
+                    <span>✓</span>
+                    Share your experience
+                </div>
+
+                <div class="review-feature">
+                    <span>✓</span>
+                    Help other vehicle owners
+                </div>
+
+                <div class="review-feature">
+                    <span>✓</span>
+                    Support reliable services
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-brand">
+        <h2>MecaLink</h2>
+        <p>Connect. Repair. Drive.</p>
+    </div>
+
+    <p>&copy; 2026 MecaLink. All rights reserved.</p>
+
+</footer>
+```
 
 </body>
+
 </html>

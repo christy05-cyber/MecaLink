@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a Mechanic - MecaLink</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
+```html
 <body>
 
-    <header>
-        <h1>MecaLink</h1>
-        <p>Connect. Repair. Drive.</p>
+    <header class="site-header">
+
+        <div class="brand">
+            <h1>MecaLink</h1>
+            <p>Connect. Repair. Drive.</p>
+        </div>
 
         <nav>
             <a href="../index.html">Home</a>
@@ -19,29 +24,133 @@
             <a href="community.html">Community</a>
             <a href="marketplace.html">Marketplace</a>
         </nav>
+
     </header>
+
 
     <main>
 
-        <h2>Find a Mechanic</h2>
+        <section class="mechanic-hero">
 
-        <p>
-            Search for a mechanic who can help with your vehicle.
-        </p>
+            <div>
+                <p class="section-label">MECHANIC SERVICES</p>
 
-        <label for="location">Location:</label>
-        <input type="text" id="location" placeholder="Enter your location">
+                <h2>Find the Right <span>Mechanic</span></h2>
 
-        <label for="service">Service:</label>
-        <input type="text" id="service" placeholder="What service do you need?">
+                <p>
+                    Search for a mechanic who can help with
+                    your vehicle and get the service you need.
+                </p>
+            </div>
 
-        <button>Search</button>
+        </section>
+
+
+        <section class="mechanic-section">
+
+            <div class="mechanic-search">
+
+                <div class="search-heading">
+                    <div class="search-icon">🔧</div>
+
+                    <div>
+                        <h2>Find a Mechanic</h2>
+                        <p>
+                            Tell us where you are and what service
+                            you need.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="search-fields">
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Enter your location"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            Service
+                        </label>
+
+                        <input
+                            type="text"
+                            id="service"
+                            placeholder="What service do you need?"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button class="search-button">
+                    🔍 Search for a Mechanic
+                </button>
+
+            </div>
+
+
+            <div class="mechanic-features">
+
+                <div class="feature-card">
+                    <div>📍</div>
+                    <h3>Local Mechanics</h3>
+                    <p>
+                        Find mechanics based on your location.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div>🔧</div>
+                    <h3>Different Services</h3>
+                    <p>
+                        Search for the type of automotive service
+                        you need.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div>⭐</div>
+                    <h3>Reviews</h3>
+                    <p>
+                        Explore ratings and reviews before
+                        choosing a service.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
+
     <footer>
+
+        <div class="footer-brand">
+            <h2>MecaLink</h2>
+            <p>Connect. Repair. Drive.</p>
+        </div>
+
         <p>&copy; 2026 MecaLink. All rights reserved.</p>
+
     </footer>
 
 </body>
+```
+
 </html>
