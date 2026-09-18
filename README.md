@@ -2,7 +2,7 @@
 
 MecaLink is a platform designed to connect vehicle owners with mechanics, automotive services and spare parts. The goal is to make it easier for people to find help when they experience vehicle problems.
 
-Live Site: `https://YOURNAME.github.io/mecalink/`
+Live Site: `https://christy05-cyber.github.io/mecalink/`
 
 ## Part 2 Updates - What's New
 
