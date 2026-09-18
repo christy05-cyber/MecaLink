@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MecaLink - Home</title>
+    <title>MecaLink - Connect. Repair. Drive.</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
     <header class="site-header">
-
         <div class="brand">
-            <h1>MecaLink</h1>
-            <p>Connect. Repair. Drive.</p>
+            <img src="images/mecalink-logo.png" alt="MecaLink Logo - Connect Repair Drive" class="logo-img">
+            <div>
+                <h1>MecaLink</h1>
+                <p>Connect. Repair. Drive.</p>
+            </div>
         </div>
 
-        <nav>
-            <a href="index.html">Home</a>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="active">Home</a>
             <a href="pages/registration.html">Register</a>
             <a href="pages/help.html">Get Help</a>
             <a href="pages/mechanics.html">Find a Mechanic</a>
@@ -28,134 +29,104 @@
             <a href="pages/about.html">About Us</a>
             <a href="pages/contact.html">Get in Touch</a>
         </nav>
-
     </header>
-
 
     <main>
 
+        <!-- HERO WITH YOUR VIDEO home.mp4 -->
         <section class="hero">
+            <video autoplay muted loop playsinline class="hero-video" poster="images/community-bg.jpg">
+                <source src="images/home.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <div class="hero-overlay"></div>
 
             <div class="hero-content">
-
                 <p class="hero-label">YOUR AUTOMOTIVE SUPPORT PLATFORM</p>
-
                 <h2>Need Help With Your <span>Vehicle?</span></h2>
-
-                <p>
-                    MecaLink connects vehicle owners with mechanics,
-                    automotive services, spare parts and a supportive
-                    automotive community.
-                </p>
-
+                <p>MecaLink connects vehicle owners with trusted mechanics, automotive services, spare parts and a supportive automotive community.</p>
                 <div class="hero-buttons">
-                    <a href="pages/help.html" class="btn btn-primary">
-                        Get Help
-                    </a>
-
-                    <a href="pages/mechanics.html" class="btn btn-secondary">
-                        Find a Mechanic
-                    </a>
+                    <a href="pages/help.html" class="btn btn-primary">Get Help</a>
+                    <a href="pages/mechanics.html" class="btn btn-secondary">Find a Mechanic</a>
                 </div>
-
             </div>
-
         </section>
 
-
+        <!-- SERVICES WITH YOUR IMAGES -->
         <section class="services-section">
-
             <div class="section-title">
                 <p class="section-label">WHAT WE OFFER</p>
                 <h2>What Can MecaLink Help You With?</h2>
-                <p>
-                    Everything you need to stay connected, get assistance
-                    and keep your vehicle moving.
-                </p>
+                <p>Everything you need to stay connected, get assistance and keep your vehicle moving.</p>
             </div>
-
 
             <div class="services">
 
                 <article class="card">
-                    <div class="card-icon">🆘</div>
-                    <h3>Get Help</h3>
-                    <p>
-                        Get assistance when you experience a vehicle
-                        problem or emergency.
-                    </p>
-                    <a href="pages/help.html" class="card-link">Get assistance →</a>
+                    <img src="images/gethelp.jpg" alt="Emergency roadside help service" class="card-img" loading="lazy">
+                    <div class="card-body">
+                        <h3>Get Help</h3>
+                        <p>Get assistance when you experience a vehicle problem or emergency.</p>
+                        <a href="pages/help.html" class="card-link">Get assistance →</a>
+                    </div>
                 </article>
 
-
                 <article class="card">
-                    <div class="card-icon">🔧</div>
-                    <h3>Find a Mechanic</h3>
-                    <p>
-                        Find mechanics who can provide vehicle
-                        repair and maintenance services.
-                    </p>
-                    <a href="pages/mechanics.html" class="card-link">Find a mechanic →</a>
+                    <img src="images/findamechanic.jpg" alt="Mechanic repairing a car" class="card-img" loading="lazy">
+                    <div class="card-body">
+                        <h3>Find a Mechanic</h3>
+                        <p>Find verified mechanics who provide repair and maintenance services.</p>
+                        <a href="pages/mechanics.html" class="card-link">Find a mechanic →</a>
+                    </div>
                 </article>
 
-
                 <article class="card">
-                    <div class="card-icon">📍</div>
-                    <h3>Share Your Location</h3>
-                    <p>
-                        Share your location when requesting assistance.
-                    </p>
-                    <a href="pages/location.html" class="card-link">Share location →</a>
+                    <img src="images/community.jpg" alt="Automotive community support" class="card-img" loading="lazy">
+                    <div class="card-body">
+                        <h3>Community</h3>
+                        <p>Connect with vehicle owners and mechanics, share advice and knowledge.</p>
+                        <a href="pages/community.html" class="card-link">Join community →</a>
+                    </div>
                 </article>
 
-
                 <article class="card">
-                    <div class="card-icon">🛒</div>
-                    <h3>Marketplace</h3>
-                    <p>
-                        Find automotive spare parts, tools and products.
-                    </p>
-                    <a href="pages/marketplace.html" class="card-link">Visit marketplace →</a>
+                    <img src="images/market.jpg" alt="Automotive spare parts engine" class="card-img" loading="lazy">
+                    <div class="card-body">
+                        <h3>Marketplace</h3>
+                        <p>Find automotive spare parts, tools and products for your vehicle.</p>
+                        <a href="pages/marketplace.html" class="card-link">Visit marketplace →</a>
+                    </div>
                 </article>
 
-
                 <article class="card">
-                    <div class="card-icon">👥</div>
-                    <h3>Community</h3>
-                    <p>
-                        Connect with vehicle owners and mechanics,
-                        share advice and exchange knowledge.
-                    </p>
-                    <a href="pages/community.html" class="card-link">Join community →</a>
+                    <img src="images/findamechanic2.jpg" alt="Car broken down on road needing help" class="card-img" loading="lazy">
+                    <div class="card-body">
+                        <h3>Share Your Location</h3>
+                        <p>Share your location when requesting roadside assistance.</p>
+                        <a href="pages/location.html" class="card-link">Share location →</a>
+                    </div>
                 </article>
 
-
                 <article class="card">
-                    <div class="card-icon">⭐</div>
-                    <h3>Ratings & Reviews</h3>
-                    <p>
-                        Read and share reviews to help users find
-                        reliable automotive services.
-                    </p>
-                    <a href="pages/ratings.html" class="card-link">View reviews →</a>
+                    <img src="images/gethelp2.jpg" alt="Car engine repair service" class="card-img" loading="lazy">
+                    <div class="card-body">
+                        <h3>Ratings & Reviews</h3>
+                        <p>Read and share reviews to find reliable automotive services.</p>
+                        <a href="pages/ratings.html" class="card-link">View reviews →</a>
+                    </div>
                 </article>
 
             </div>
-
         </section>
 
     </main>
 
-
     <footer>
-
         <div class="footer-brand">
             <h2>MecaLink</h2>
             <p>Connect. Repair. Drive.</p>
         </div>
-
         <p>&copy; 2026 MecaLink. All rights reserved.</p>
-
     </footer>
 
 </body>
