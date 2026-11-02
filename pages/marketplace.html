@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace - MecaLink</title>
+    <meta name="description" content="Explore MecaLink to find and sell car spare parts, mechanic tools and automotive products. Connect with buyers and sellers.">
+    <title>Buy and Sell Car Parts & Mechanic Tools | MecaLink</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body>2
 
-```
 <header class="site-header">
 
     <div class="brand">
@@ -22,7 +21,12 @@
         <a href="mechanics.html">Find a Mechanic</a>
         <a href="help.html">Get Help</a>
         <a href="community.html">Community</a>
-        <a href="marketplace.html">Marketplace</a>
+        <a href="marketplace.html" class="active">Marketplace</a>
+        <a href="ratings.html">Reviews</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Get in Touch</a>
+        <a href="registration.html">Register</a>
+        <a href="location.html">Location</a>
     </nav>
 
 </header>
@@ -49,6 +53,16 @@
 
 
     <section class="marketplace-section">
+        <div class="marketplace-search">
+    <input
+        type="text"
+        id="marketplaceSearch"
+        placeholder="Search for spare parts or mechanic tools..."
+    >
+    <button type="button" id="searchButton">
+        Search
+    </button>
+</div>
 
         <div class="section-title">
 
@@ -62,6 +76,11 @@
             </p>
 
         </div>
+        <div class="marketplace-filters">
+    <button type="button" class="filter-button active" data-filter="all">All</button>
+    <button type="button" class="filter-button" data-filter="vehicle parts">Vehicle Parts</button>
+    <button type="button" class="filter-button" data-filter="tools & equipment">Tools & Equipment</button>
+</div>
 
 
         <div class="marketplace-grid">
@@ -126,6 +145,19 @@
             </article>
 
         </div>
+                </div>
+
+        <section class="marketplace-products" id="vehicle-parts">
+
+            <div class="section-title">
+                <p class="section-label">EXPLORE OUR PRODUCTS</p>
+                <h2>Vehicle Parts</h2>
+                <p>Discover essential replacement parts for your vehicle.</p>
+            </div>
+
+        </section>
+
+    </section>
 
     </section>
 
@@ -142,7 +174,7 @@
     <p>&copy; 2026 MecaLink. All rights reserved.</p>
 
 </footer>
-```
+<script src="../JS/script.js"></script>
 
 </body>
 

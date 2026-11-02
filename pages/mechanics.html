@@ -1,13 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find a Mechanic - MecaLink</title>
+
+    <meta name="description" content="Discover MecaLink to connect with mechanics, find vehicle repair services and get help maintaining your car.">
+
+    <meta name="author" content="MecaLink">
+
+    <title>Find Local Mechanics and Vehicle Repair Services | MecaLink</title>
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-```html
 <body>
 
     <header class="site-header">
@@ -19,14 +26,18 @@
 
         <nav>
             <a href="../index.html">Home</a>
-            <a href="mechanics.html">Find a Mechanic</a>
+            <a href="mechanics.html" class="active">Find a Mechanic</a>
             <a href="help.html">Get Help</a>
+            <a href="location.html">Location</a>
             <a href="community.html">Community</a>
             <a href="marketplace.html">Marketplace</a>
+            <a href="ratings.html">Reviews</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Get in Touch</a>
+            <a href="registration.html">Register</a>
         </nav>
 
     </header>
-
 
     <main>
 
@@ -45,7 +56,6 @@
 
         </section>
 
-
         <section class="mechanic-section">
 
             <div class="mechanic-search">
@@ -62,47 +72,45 @@
                     </div>
                 </div>
 
+                <form id="mechanicSearchForm">
 
-                <div class="search-fields">
+                    <div class="search-fields">
 
-                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="location">Location</label>
 
-                        <label for="location">
-                            Location
-                        </label>
+                            <input
+                                type="text"
+                                id="location"
+                                name="location"
+                                placeholder="Enter your location"
+                                required
+                            >
+                        </div>
 
-                        <input
-                            type="text"
-                            id="location"
-                            placeholder="Enter your location"
-                        >
+                        <div class="form-group">
+                            <label for="service">Service</label>
 
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="service">
-                            Service
-                        </label>
-
-                        <input
-                            type="text"
-                            id="service"
-                            placeholder="What service do you need?"
-                        >
+                            <input
+                                type="text"
+                                id="service"
+                                name="service"
+                                placeholder="What service do you need?"
+                                required
+                            >
+                        </div>
 
                     </div>
 
-                </div>
+                    <button type="submit" class="search-button">
+                        🔍 Search for a Mechanic
+                    </button>
 
+                    <p id="mechanicSearchMessage" role="status" aria-live="polite"></p>
 
-                <button class="search-button">
-                    🔍 Search for a Mechanic
-                </button>
+                </form>
 
             </div>
-
 
             <div class="mechanic-features">
 
@@ -138,7 +146,6 @@
 
     </main>
 
-
     <footer>
 
         <div class="footer-brand">
@@ -150,7 +157,7 @@
 
     </footer>
 
-</body>
-```
+    <script src="../JS/script.js" defer></script>
 
+</body>
 </html>

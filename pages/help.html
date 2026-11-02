@@ -1,64 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Help - MecaLink</title>
+
+    <meta name="description" content="Get vehicle breakdown assistance and repair help through MecaLink. Describe your vehicle problem and location to explore automotive assistance.">
+
+    <meta name="keywords" content="vehicle breakdown assistance, car repair help, automotive assistance, mechanic help, MecaLink">
+
+    <meta name="author" content="MecaLink">
+
+    <title>Get Vehicle Breakdown Assistance and Repair Help | MecaLink</title>
+
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../JS/script.js" defer></script>
 </head>
 
 <body>
 
-    <header class="site-header">
+<header class="site-header">
 
-        <div class="brand">
-            <h1>MecaLink</h1>
-            <p>Connect. Repair. Drive.</p>
+    <div class="brand">
+        <h1>MecaLink</h1>
+        <p>Connect. Repair. Drive.</p>
+    </div>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="registration.html">Register</a>
+        <a href="help.html" class="active">Get Help</a>
+        <a href="mechanics.html">Find a Mechanic</a>
+        <a href="location.html">Location</a>
+        <a href="community.html">Community</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="ratings.html">Reviews</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Get in Touch</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="help-hero">
+
+        <div class="help-intro">
+
+            <p class="section-label">VEHICLE ASSISTANCE</p>
+
+            <h2>Need Help With Your <span>Vehicle?</span></h2>
+
+            <p>
+                Tell us what happened and share your location.
+                MecaLink helps connect you with the right
+                automotive assistance.
+            </p>
+
         </div>
 
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="mechanics.html">Find a Mechanic</a>
-            <a href="help.html">Get Help</a>
-            <a href="community.html">Community</a>
-            <a href="marketplace.html">Marketplace</a>
-        </nav>
+    </section>
 
-    </header>
+    <section class="help-section">
 
+        <div class="help-container">
 
-    <main>
+            <div class="help-form">
 
-        <section class="help-hero">
+                <h2>Request Assistance</h2>
 
-            <div class="help-intro">
-                <p class="section-label">VEHICLE ASSISTANCE</p>
-
-                <h2>Need Help With Your <span>Vehicle?</span></h2>
-
-                <p>
-                    Tell us what happened and share your location.
-                    MecaLink helps connect you with the right
-                    automotive assistance.
+                <p class="form-description">
+                    Please provide a few details so we can
+                    understand how to assist you.
                 </p>
-            </div>
 
-        </section>
+                <form
+                    id="helpForm"
+                    name="help"
+                    method="POST"
+                    action="/"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                >
 
+                    <input type="hidden" name="form-name" value="help">
 
-        <section class="help-section">
-
-            <div class="help-container">
-
-                <div class="help-form">
-
-                    <h2>Request Assistance</h2>
-
-                    <p class="form-description">
-                        Please provide a few details so we can
-                        understand how to assist you.
+                    <p hidden>
+                        <label>
+                            Leave this field empty:
+                            <input name="bot-field">
+                        </label>
                     </p>
-
 
                     <div class="form-group">
 
@@ -66,14 +98,17 @@
                             What is the problem?
                         </label>
 
-                        <input
-                            type="text"
+                        <textarea
                             id="problem"
+                            name="problem"
                             placeholder="Describe your vehicle problem"
-                        >
+                            rows="4"
+                            required
+                            minlength="5"
+                            maxlength="1000"
+                        ></textarea>
 
                     </div>
-
 
                     <div class="form-group">
 
@@ -84,65 +119,74 @@
                         <input
                             type="text"
                             id="location"
+                            name="location"
                             placeholder="Enter your location"
+                            required
+                            minlength="3"
+                            maxlength="150"
                         >
 
                     </div>
 
-
-                    <button class="help-button">
+                    <button class="help-button" type="submit">
                         Request Help
                     </button>
 
+                    <p
+                        id="helpMessage"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+            <div class="help-info">
+
+                <div class="info-icon">🆘</div>
+
+                <h3>Need urgent assistance?</h3>
+
+                <p>
+                    Provide accurate information about your
+                    vehicle problem and location to help
+                    connect you with appropriate assistance.
+                </p>
+
+                <div class="info-item">
+                    <span>✓</span>
+                    Describe the problem clearly
                 </div>
 
+                <div class="info-item">
+                    <span>✓</span>
+                    Provide your current location
+                </div>
 
-                <div class="help-info">
-
-                    <div class="info-icon">🆘</div>
-
-                    <h3>Need urgent assistance?</h3>
-
-                    <p>
-                        Provide accurate information about your
-                        vehicle problem and location to help
-                        connect you with appropriate assistance.
-                    </p>
-
-                    <div class="info-item">
-                        <span>✓</span>
-                        Describe the problem clearly
-                    </div>
-
-                    <div class="info-item">
-                        <span>✓</span>
-                        Provide your current location
-                    </div>
-
-                    <div class="info-item">
-                        <span>✓</span>
-                        Submit your request
-                    </div>
-
+                <div class="info-item">
+                    <span>✓</span>
+                    Submit your request
                 </div>
 
             </div>
 
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <div class="footer-brand">
-            <h2>MecaLink</h2>
-            <p>Connect. Repair. Drive.</p>
         </div>
 
-        <p>&copy; 2026 MecaLink. All rights reserved.</p>
+    </section>
 
-    </footer>
+</main>
+
+<footer>
+
+    <div class="footer-brand">
+        <h2>MecaLink</h2>
+        <p>Connect. Repair. Drive.</p>
+    </div>
+
+    <p>&copy; 2026 MecaLink. All rights reserved.</p>
+
+</footer>
 
 </body>
 </html>

@@ -1,14 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location Sharing - MecaLink</title>
+
+    <meta name="description" content="Share your location with MecaLink to help vehicle owners connect with mechanics and automotive assistance providers.">
+
+    <meta name="keywords" content="MecaLink, location sharing, vehicle assistance, mechanics, automotive services">
+
+    <meta name="author" content="MecaLink">
+
+    <title>Location Sharing | MecaLink - Connect. Repair. Drive.</title>
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
-```
 <header class="site-header">
 
     <div class="brand">
@@ -18,14 +28,18 @@
 
     <nav>
         <a href="../index.html">Home</a>
-        <a href="mechanics.html">Find a Mechanic</a>
+        <a href="registration.html">Register</a>
         <a href="help.html">Get Help</a>
+        <a href="mechanics.html">Find a Mechanic</a>
+        <a href="location.html" class="active">Location</a>
         <a href="community.html">Community</a>
         <a href="marketplace.html">Marketplace</a>
+        <a href="ratings.html">Reviews</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Get in Touch</a>
     </nav>
 
 </header>
-
 
 <main>
 
@@ -46,7 +60,6 @@
 
     </section>
 
-
     <section class="location-section">
 
         <div class="location-container">
@@ -64,24 +77,29 @@
 
                 <div class="location-form-group">
 
-                    <label for="location">
-                        Your Location
-                    </label>
+                    <label for="location">Your Location</label>
 
                     <input
                         type="text"
                         id="location"
+                        name="location"
                         placeholder="Enter your current location"
+                        required
                     >
 
                 </div>
 
-                <button class="location-button">
+                <button
+                    class="location-button"
+                    id="shareLocationButton"
+                    type="button"
+                >
                     📍 Share Location
                 </button>
 
-            </div>
+                <p id="locationMessage" role="status" aria-live="polite"></p>
 
+            </div>
 
             <div class="location-info">
 
@@ -117,7 +135,6 @@
 
 </main>
 
-
 <footer>
 
     <div class="footer-brand">
@@ -128,8 +145,8 @@
     <p>&copy; 2026 MecaLink. All rights reserved.</p>
 
 </footer>
-```
+
+<script src="../JS/script.js" defer></script>
 
 </body>
-
 </html>

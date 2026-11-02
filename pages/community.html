@@ -1,16 +1,22 @@
+<html>
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community - MecaLink</title>
+
+    <meta name="description" content="Join the MecaLink community to connect with vehicle owners and mechanics, share automotive advice, discuss vehicle repairs and exchange experiences.">
+    <meta name="keywords" content="MecaLink community, vehicle owners, mechanics, automotive advice, car repairs, vehicle maintenance">
+    <meta name="author" content="MecaLink">
+
+    <title>MecaLink Community | Connect with Vehicle Owners and Mechanics</title>
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-```
 <header class="site-header">
 
     <div class="brand">
@@ -24,7 +30,7 @@
         <a href="help.html">Get Help</a>
         <a href="mechanics.html">Find a Mechanic</a>
         <a href="location.html">Location</a>
-        <a href="community.html">Community</a>
+        <a href="community.html" class="active">Community</a>
         <a href="marketplace.html">Marketplace</a>
         <a href="ratings.html">Reviews</a>
         <a href="about.html">About Us</a>
@@ -32,7 +38,6 @@
     </nav>
 
 </header>
-
 
 <main>
 
@@ -52,19 +57,19 @@
 
         </div>
 
-
         <div class="community-images">
 
-            <img src="../images/community-bg.jpg"
-                 alt="MecaLink Community">
+            <img
+                src="../images/community-bg.jpg"
+                alt="Automotive community and vehicle owners">
 
-            <img src="../images/community%20%282%29.jpg"
-                 alt="MecaLink Community">
+            <img
+                src="../images/community%20%282%29.jpg"
+                alt="MecaLink automotive community">
 
         </div>
 
     </section>
-
 
     <section class="community-section">
 
@@ -80,7 +85,6 @@
             </p>
 
         </div>
-
 
         <div class="community-posts">
 
@@ -99,14 +103,14 @@
                         community for advice and possible solutions.
                     </p>
 
-                    <button class="community-button">
+                    <button class="community-button" type="button"
+                        data-post="vehicle">
                         View Post
                     </button>
 
                 </div>
 
             </article>
-
 
             <article class="community-card">
 
@@ -123,14 +127,14 @@
                         maintenance advice and automotive knowledge.
                     </p>
 
-                    <button class="community-button">
+                    <button class="community-button" type="button"
+                        data-post="mechanic">
                         View Post
                     </button>
 
                 </div>
 
             </article>
-
 
             <article class="community-card">
 
@@ -147,7 +151,8 @@
                         other vehicle owners learn from you.
                     </p>
 
-                    <button class="community-button">
+                    <button class="community-button" type="button"
+                        data-post="experience">
                         View Post
                     </button>
 
@@ -157,10 +162,11 @@
 
         </div>
 
+        <p id="communityMessage" role="status" aria-live="polite"></p>
+
     </section>
 
 </main>
-
 
 <footer>
 
@@ -172,7 +178,9 @@
     <p>&copy; 2026 MecaLink. All rights reserved.</p>
 
 </footer>
-```
+
+<script src="../JS/script.js"></script>
 
 </body>
 </html>
+
